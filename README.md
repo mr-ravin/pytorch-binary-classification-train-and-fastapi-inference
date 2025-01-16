@@ -79,6 +79,10 @@ Github Repository: [Repository](https://github.com/mr-ravin/pytorch-binary-class
 ### Environment Creation:
 - Python Version: 3.12.4
 - `requirements.txt` file contains details of all the required packages.
+- Install packages from `requirements.txt`:
+```
+pip3 install -r requirements.txt
+```
 
 ----
 ### Training the Model:
@@ -99,9 +103,11 @@ python3 main.py --mode train --epoch 15 --img_size 256 --device cpu
 ```
 python3 main.py --mode train --epoch 15 --img_size 256 --device cpu --data_split True
 ```
+Note: This script will first convert the raw images to 256x256 and then save them as .jpg images. The content inside `dataset/raw/` will remain unchanged.
 
 ##### Analyse the training related graph below:
 The train and val loss values suggests that model at `epoch=14` is working better. As, training loss < validation loss, and both are converging.
+![training graphs of wandb.ai](https://github.com/mr-ravin/pytorch-binary-classification-train-and-fastapi-inference/blob/main/graphs/Model_Training-Graphs.png)
 
 ----
 
@@ -116,6 +122,7 @@ This script will automatically create visual images from `validation set` inside
 
 Evaluation on Validation Set: `Val Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000`
 
+
 ##### Evaluation on test dataset:
 Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wandb.ai`.
 ```
@@ -125,16 +132,30 @@ This script will automatically create visual images from `test set` inside `resu
 
 Evaluation on Test Set: `Test Set: - Accuracy: 0.9286 Precision: 0.8750, Recall: 1.0000, F1 Score: 0.9333`
 
+
 ##### Overall Model Evaluation [from Wandb.ai User Interface]:
+Logged values of accuracy, precision, recall, and f1 score for validation and test dataset in `wandb.ai`
+![model evaluation graphs of wandb.ai](https://github.com/mr-ravin/pytorch-binary-classification-train-and-fastapi-inference/blob/main/graphs/Model_Evaluation-Val-and-Test.png)
+
+#### Observation: 
+1. Trained Model is performing good with validation data (all correct), and test set (one-miss classification)
+2. Since the overall dataset is small, so even one-miss classification will show bigger numerical impact.
+3. After checking images in `results/` directory, one can see that the mis-classified image of test set is `pm-full24.jpg` present inside `results/pm-full/pm-back/`. Means, GT is pm-full but the model is preciting it as `pm-back`.
+4. How can we further improve? Gather similar nature images of `pm-full24.jpg` and split them into train, val, and test, and resume the training with very low learning rate.
 
 ----
 
 ### Deployment of the Trained Model
 FastAPI is used for the deployment of the trained model. The script fetches the stored weight file from `weights/` directory and requires `model.py` to read model architecture details.
 
-Required Files and Folders:
-1. `weights/`
-2. `model.py`
+##### Required Files and Folders:
+```
+|- weights/
+|- model.py
+|- fast_api_server.py
+|- test_client.sh      # a simple code to test the deployed model.
+|- requirements.txt    # one can refer the package version from here.
+```
 
 ##### Script to start the FastAPI Server:
 
