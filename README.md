@@ -108,7 +108,7 @@ The train and val loss values suggests that model at `epoch=14` is working bette
 ### Evaluate Model Performance of Val and Test data.
 
 ##### Evaluation on validation dataset:
-Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wand.ai`.
+Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wandb.ai`.
 ```
 python3 main.py --mode val
 ```
@@ -117,7 +117,7 @@ This script will automatically create visual images from `validation set` inside
 Evaluation on Validation Set: `Val Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000`
 
 ##### Evaluation on test dataset:
-Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wand.ai`.
+Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wandb.ai`.
 ```
 python3 main.py --mode test
 ```
