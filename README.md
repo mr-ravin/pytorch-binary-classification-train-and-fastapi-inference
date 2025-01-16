@@ -196,7 +196,7 @@ Terminal output:
 ```
 ----
 
-### Software License: [Excluding the content of dataset/]
+### Software License: [Excluding the content of dataset/ and results/ directories]
 ```
 Copyright (c) 2025 Ravin Kumar
 Website: https://mr-ravin.github.io
