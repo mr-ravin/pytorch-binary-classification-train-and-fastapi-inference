@@ -198,7 +198,7 @@ Terminal output:
 
 ### Software License: [Excluding the content of dataset/]
 ```
-Copyright (c) 2024 Ravin Kumar
+Copyright (c) 2025 Ravin Kumar
 Website: https://mr-ravin.github.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
