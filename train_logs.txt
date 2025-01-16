@@ -1,0 +1,129 @@
+(torch) sparrow@sparrow:~/Desktop/binary_classification$ python3 main.py --mode train
+wandb: Currently logged in as: ch-ravinkumar (ch-ravinkumar-meerut-institute-of-engineering-and-technology). Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Tracking run with wandb version 0.19.3
+wandb: Run data is saved locally in /home/sparrow/Desktop/binary_classification/wandb/run-20250116_103201-e4krd7cn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run likely-smoke-8
+wandb: ⭐️ View project at https://wandb.ai/ch-ravinkumar-meerut-institute-of-engineering-and-technology/binary-classification-cloths
+wandb: 🚀 View run at https://wandb.ai/ch-ravinkumar-meerut-institute-of-engineering-and-technology/binary-classification-cloths/runs/e4krd7cn
+Train Epoch 1: 100%|███████████████████| 25/25 [00:51<00:00,  2.07s/Train batch]
+VAL Epoch 1: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.12VAL batch/s]
+Validation Set: - Accuracy: 0.6667 Precision: 1.0000, Recall: 0.3333, F1 Score: 0.5000
+Train Loss:  0.6457192073265622  Val Loss:  0.5954418778570637
+
+
+Train Epoch 2: 100%|███████████████████| 25/25 [00:42<00:00,  1.70s/Train batch]
+VAL Epoch 2: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.26VAL batch/s]
+Validation Set: - Accuracy: 0.7500 Precision: 1.0000, Recall: 0.5000, F1 Score: 0.6667
+Train Loss:  0.49992497005764264  Val Loss:  0.523252269210344
+saved model weights at epoch:  2
+
+
+Train Epoch 3: 100%|███████████████████| 25/25 [00:39<00:00,  1.57s/Train batch]
+VAL Epoch 3: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.84VAL batch/s]
+Validation Set: - Accuracy: 0.9167 Precision: 1.0000, Recall: 0.8333, F1 Score: 0.9091
+Train Loss:  0.3326718463107807  Val Loss:  0.33786383730409353
+saved model weights at epoch:  3
+
+
+Train Epoch 4: 100%|███████████████████| 25/25 [00:37<00:00,  1.49s/Train batch]
+VAL Epoch 4: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.13VAL batch/s]
+Validation Set: - Accuracy: 0.9167 Precision: 1.0000, Recall: 0.8333, F1 Score: 0.9091
+Train Loss:  0.32097857704517196  Val Loss:  0.31084889141443517
+
+
+Train Epoch 5: 100%|███████████████████| 25/25 [00:38<00:00,  1.54s/Train batch]
+VAL Epoch 5: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.24VAL batch/s]
+Validation Set: - Accuracy: 0.9167 Precision: 1.0000, Recall: 0.8333, F1 Score: 0.9091
+Train Loss:  0.2987609136075076  Val Loss:  0.27369087995324876
+
+
+Train Epoch 6: 100%|███████████████████| 25/25 [00:47<00:00,  1.92s/Train batch]
+VAL Epoch 6: 100%|█████████████████████████| 4/4 [00:02<00:00,  1.57VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.22343574777278188  Val Loss:  0.225965833230201
+saved model weights at epoch:  6
+
+
+Train Epoch 7: 100%|███████████████████| 25/25 [00:40<00:00,  1.63s/Train batch]
+VAL Epoch 7: 100%|█████████████████████████| 4/4 [00:02<00:00,  1.34VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.21385148886732278  Val Loss:  0.23953665939158456
+saved model weights at epoch:  7
+
+
+Train Epoch 8: 100%|███████████████████| 25/25 [00:44<00:00,  1.78s/Train batch]
+VAL Epoch 8: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.34VAL batch/s]
+Validation Set: - Accuracy: 0.9167 Precision: 0.8571, Recall: 1.0000, F1 Score: 0.9231
+Train Loss:  0.24069096305057422  Val Loss:  0.21019259873562063
+
+
+Train Epoch 9: 100%|███████████████████| 25/25 [00:44<00:00,  1.76s/Train batch]
+VAL Epoch 9: 100%|█████████████████████████| 4/4 [00:01<00:00,  2.27VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.24691633215127737  Val Loss:  0.21176008537002697
+
+
+Train Epoch 10: 100%|██████████████████| 25/25 [00:45<00:00,  1.81s/Train batch]
+VAL Epoch 10: 100%|████████████████████████| 4/4 [00:01<00:00,  2.64VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.23884398662873813  Val Loss:  0.2063769590669411
+
+
+Train Epoch 11: 100%|██████████████████| 25/25 [00:39<00:00,  1.56s/Train batch]
+VAL Epoch 11: 100%|████████████████████████| 4/4 [00:01<00:00,  2.21VAL batch/s]
+Validation Set: - Accuracy: 0.9167 Precision: 0.8571, Recall: 1.0000, F1 Score: 0.9231
+Train Loss:  0.15854194264772117  Val Loss:  0.19502750110325437
+saved model weights at epoch:  11
+
+
+Train Epoch 12: 100%|██████████████████| 25/25 [00:39<00:00,  1.59s/Train batch]
+VAL Epoch 12: 100%|████████████████████████| 4/4 [00:01<00:00,  2.15VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.21097328563581838  Val Loss:  0.22099728516084075
+
+
+Train Epoch 13: 100%|██████████████████| 25/25 [00:40<00:00,  1.64s/Train batch]
+VAL Epoch 13: 100%|████████████████████████| 4/4 [00:02<00:00,  1.74VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.23970680692276647  Val Loss:  0.19134002445615392
+
+
+Train Epoch 14: 100%|██████████████████| 25/25 [00:49<00:00,  1.97s/Train batch]
+VAL Epoch 14: 100%|████████████████████████| 4/4 [00:02<00:00,  1.72VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.15315217910540885  Val Loss:  0.18973726211747075
+saved model weights at epoch:  14
+
+
+Train Epoch 15: 100%|██████████████████| 25/25 [00:46<00:00,  1.85s/Train batch]
+VAL Epoch 15: 100%|████████████████████████| 4/4 [00:01<00:00,  2.16VAL batch/s]
+Validation Set: - Accuracy: 1.0000 Precision: 1.0000, Recall: 1.0000, F1 Score: 1.0000
+Train Loss:  0.25070207778666426  Val Loss:  0.17693995428299927
+
+
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▁▂▃▃▃▄▅▅▅▆▇▇▇█
+wandb:    train loss █▆▄▃▃▂▂▂▂▂▁▂▂▁▂
+wandb:  val accuracy ▁▃▆▆▆██▆██▆████
+wandb:        val f1 ▁▃▇▇▇██▇██▇████
+wandb:      val loss █▇▄▃▃▂▂▂▂▁▁▂▁▁▁
+wandb: val precision ███████▁██▁████
+wandb:    val recall ▁▃▆▆▆██████████
+wandb: 
+wandb: Run summary:
+wandb:         epoch 15
+wandb:    train loss 0.2507
+wandb:  val accuracy 1
+wandb:        val f1 1
+wandb:      val loss 0.17694
+wandb: val precision 1
+wandb:    val recall 1
+wandb: 
+wandb: 🚀 View run likely-smoke-8 at: https://wandb.ai/ch-ravinkumar-meerut-institute-of-engineering-and-technology/binary-classification-cloths/runs/e4krd7cn
+wandb: ⭐️ View project at: https://wandb.ai/ch-ravinkumar-meerut-institute-of-engineering-and-technology/binary-classification-cloths
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250116_103201-e4krd7cn/logs
