@@ -17,7 +17,7 @@ Github Repository: [Repository](https://github.com/mr-ravin/pytorch-binary-class
 4. Sample test script to check FastAPI functionality after deployment.
 
 ----
-### Directory Structure
+### Directory Structure:
 ```
 |- dataset
 |    |- raw/         # raw data is stored inside this directory.
@@ -115,7 +115,7 @@ The train and val loss values suggests that model at `epoch=14` is working bette
 
 ----
 
-### Evaluate Model Performance of Val and Test data.
+### Evaluate Model Performance of Val and Test data:
 
 ##### Evaluation on validation dataset:
 Use below script to generate `accuracy`, `precision`, `recall`, and `f1 score`. The values will be shown in the  terminal, and also will get logged in the `wandb.ai`.
@@ -149,7 +149,7 @@ Logged values of accuracy, precision, recall, and f1 score for validation and te
 
 ----
 
-### Deployment of the Trained Model
+### Deployment of the Trained Model:
 FastAPI is used for the deployment of the trained model. The script fetches the stored weight file from `weights/` directory and requires `model.py` to read model architecture details.
 
 ##### Required Files and Folders:
