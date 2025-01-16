@@ -145,7 +145,7 @@ Logged values of accuracy, precision, recall, and f1 score for validation and te
 1. Trained Model is performing good with validation data (all correct), and test set (one-miss classification)
 2. Since the overall dataset is small, so even one-miss classification will show bigger numerical impact.
 3. After checking images in `results/` directory, one can see that the mis-classified image of test set is `pm-full24.jpg` present inside `results/pm-full/pm-back/`. Means, GT is pm-full but the model is preciting it as `pm-back`.
-4. How can we further improve? Gather similar nature images of `pm-full24.jpg` and split them into train, val, and test, and resume the training with very low learning rate.
+4. How can we further improve? Gather more images similar to features of `pm-full24.jpg` and distribute them into train, val, and test, and resume the current training with very low learning rate.
 
 ----
 
