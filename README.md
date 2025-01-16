@@ -90,6 +90,8 @@ pip3 install -r requirements.txt
 ### Training the Model:
 - During the training phase, the code will also logs the train and validation loss, along with accuracy, precision, recall, and f1 score in the `wandb.ai` project.
 - Once the training is complete final weights will get stored in `weigths/` folder.
+  
+###### Important: Starting the training will automatically remove any previously saved weights in `weights/` in order to save system space.
 
 ##### Training related details:
 1. Model Architecture used: `Resnet-18`
