@@ -74,6 +74,8 @@ Github Repository: [Repository](https://github.com/mr-ravin/pytorch-binary-class
 |- test_client.sh  # bash script to test the deployed model by sending an image request and checking response.
 |
 |- requirements.txt # environment file
+|- __init__.py
+|- train_logs.txt
 ```
 ----
 ### Environment Creation:
